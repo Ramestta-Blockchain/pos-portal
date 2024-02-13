@@ -1080,7 +1080,7 @@ contract EtherPredicate is ITokenPredicate, AccessControlMixin, Initializable {
     using RLPReader for RLPReader.RLPItem;
 
     bytes32 public constant MANAGER_ROLE = keccak256("MANAGER_ROLE");
-    bytes32 public constant TOKEN_TYPE = keccak256("Ether");
+    bytes32 public constant TOKEN_TYPE = keccak256("Matic");
     bytes32 public constant TRANSFER_EVENT_SIG = 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef;
 
     event LockedEther(

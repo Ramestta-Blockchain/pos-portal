@@ -1142,6 +1142,14 @@ contract EIP712Base is Initializable {
 
 pragma solidity 0.6.6;
 
+/**
+ * @notice DISCLAIMER:
+ * Do not use NativeMetaTransaction and ContextMixin together with OpenZeppelin's "multicall"
+ * nor any other form of self delegatecall!
+ * Risk of address spoofing attacks.
+ * Read more: https://blog.openzeppelin.com/arbitrary-address-spoofing-vulnerability-erc2771context-multicall-public-disclosure
+ */
+
 
 
 contract NativeMetaTransaction is EIP712Base {
@@ -1247,6 +1255,14 @@ contract NativeMetaTransaction is EIP712Base {
 // File: contracts/common/ContextMixin.sol
 
 pragma solidity 0.6.6;
+
+/**
+ * @notice DISCLAIMER:
+ * Do not use NativeMetaTransaction and ContextMixin together with OpenZeppelin's "multicall"
+ * nor any other form of self delegatecall!
+ * Risk of address spoofing attacks.
+ * Read more: https://blog.openzeppelin.com/arbitrary-address-spoofing-vulnerability-erc2771context-multicall-public-disclosure
+ */
 
 abstract contract ContextMixin {
     function msgSender()

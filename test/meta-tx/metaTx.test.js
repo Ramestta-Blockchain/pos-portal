@@ -254,7 +254,7 @@ contract('NativeMetaTransaction', (accounts) => {
     it('Can receive withdraw tx', async() => {
       const functionSignature = await web3ChildMintableERC721.methods.withdraw(tokenId).encodeABI()
       const name = await dummyMintableERC721.name()
-      const chainId = await dummyMintableERC721.getChainId()
+      const  = await dummyMintableERC721.getChainId()
       const nonce = await dummyMintableERC721.getNonce(user)
 
       const sig = sigUtils.signTypedData(userPK, {

@@ -1,5 +1,4 @@
 module.exports = {
-  // plasmaRootChain: '0x82a72315E16cE224f28E1F1fB97856d3bF83f010', // testnetv3
-  plasmaRootChain: '0x2890bA17EfE978480615e330ecB65333b880928e', // mumbai
-  stateReceiver: '0x0000000000000000000000000000000000001001'
-}
+  plasmaRootChain: "0x9b438173600b51bf50a66a87032a00419a4f4924", // pingaksha
+  stateReceiver: "0x0000000000000000000000000000000000001001",
+};

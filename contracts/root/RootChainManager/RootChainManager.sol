@@ -36,7 +36,7 @@ contract RootChainManager is
     // maybe DEPOSIT and MAP_TOKEN can be reduced to bytes4
     bytes32 public constant DEPOSIT = keccak256("DEPOSIT");
     bytes32 public constant MAP_TOKEN = keccak256("MAP_TOKEN");
-    address public constant ETHER_ADDRESS = 0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE;
+    address public constant ETHER_ADDRESS = 0x0000000000000000000000000000000000001010;
     bytes32 public constant MAPPER_ROLE = keccak256("MAPPER_ROLE");
 
     function _msgSender()
