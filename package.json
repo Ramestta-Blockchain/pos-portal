@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "testrpc": "ganache-cli --hardfork istanbul --mnemonic 'clock radar mass judge dismiss just intact mind resemble fringe diary casino' --gasLimit 8000000 --gasPrice 0 --port 9545 --networkId 53227",
+    "fork:root": "ganache-cli --fork https://rpc.ankr.com/polygon_mumbai --mnemonic 'clock radar mass judge dismiss just intact mind resemble fringe diary casino' --allowUnlimitedContractSize --gasLimit 8000000 --gasPrice 0 --port 8545 --networkId 80001",
+    "fork:child": "ganache-cli --fork https://testnet.ramestta.com --mnemonic 'clock radar mass judge dismiss just intact mind resemble fringe diary casino' --allowUnlimitedContractSize --gasLimit 8000000 --gasPrice 0 --port 9545 --networkId 1377",
     "template:process": "bun run scripts/process-templates.js",
     "bor": "cd test-blockchain && bash run-docker.sh",
     "bor:clean": "cd test-blockchain && bash stop-docker.sh",
